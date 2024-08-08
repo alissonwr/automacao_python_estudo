@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área de Transferência</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Transferência de Arquivos</h1>
+        <form action="/transferencia" method="POST" enctype="multipart/form-data">
+
+            <label for="arquivo1">Escolha o primeiro arquivo excel</label>
+            <input type="file" id="arquivo1" name="arquivo1" required>
+
+            <label for="arquivo2">Escolha o segundo arquivo excel</label>
+            <input type="file" id="arquivo2" name="arquivo2" required>
+
+            <label for="coluna_comum_arquivo1">Digite o nome da coluna em comum do arquivo 1</label>
+            <input type="text" id="coluna_comum_arquivo1" name="coluna_comum_arquivo1" required>
+
+            <label for="coluna_comum_arquivo2">Digite o nome da coluna em comum do arquivo 2</label>
+            <input type="text" id="coluna_comum_arquivo2" name="coluna_comum_arquivo2" required>
+
+            <input type="submit" value="Transferir Dados">
+        </form>
+    </div>
+</body>
+</html>
